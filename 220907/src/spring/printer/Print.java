@@ -1,6 +1,6 @@
 package spring.printer;
 
-import spring.entitiy.Exam;
+import spring.entity.Exam;
 
 public interface Print {
 	public void Do();

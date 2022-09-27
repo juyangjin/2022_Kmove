@@ -3,9 +3,7 @@ package spring.main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import spring.entitiy.Exam;
-import spring.entitiy.FinalExam;
-import spring.entitiy.MidExam;
+import spring.entity.Exam;
 import spring.printer.ColPrint;
 import spring.printer.Print;
 import spring.printer.RowPrint;

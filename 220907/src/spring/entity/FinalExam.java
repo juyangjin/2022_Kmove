@@ -1,4 +1,4 @@
-package spring.entitiy;
+package spring.entity;
 
 public class FinalExam implements Exam {  //FinalExam이 exam을 실행
 	

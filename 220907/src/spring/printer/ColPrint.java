@@ -1,6 +1,6 @@
 package spring.printer;
 
-import spring.entitiy.Exam;
+import spring.entity.Exam;
 
 public class ColPrint implements Print{ //ColPrint가 Print를 실행
 
@@ -18,5 +18,6 @@ public class ColPrint implements Print{ //ColPrint가 Print를 실행
 		// TODO Auto-generated method stub
 		this._exam = e;
 	}
+
 	
 }

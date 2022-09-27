@@ -1,6 +1,6 @@
 package spring.printer;
 
-import spring.entitiy.Exam;
+import spring.entity.Exam;
 
 public class RowPrint implements Print {
 

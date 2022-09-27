@@ -1,4 +1,4 @@
-package spring.entitiy;
+package spring.entity;
 
 public interface Exam {
 	public int Total();
