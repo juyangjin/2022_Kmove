@@ -15,7 +15,7 @@ public class Program {
 		System.out.println("처음 자바 스프링"); //출력
 		
 		ApplicationContext ctx = 
-				new ClassPathXmlApplicationContext("spring/main/setting.xml");  //xml 경로 설정
+				new ClassPathXmlApplicationContext("classpath:/setting.xml");  //xml 경로 설정
 		
 		Exam _exam = (Exam) ctx.getBean("exam"); 
 		
