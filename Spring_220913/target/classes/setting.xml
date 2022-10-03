@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mid" class="spring.entity.MidExam"></bean>
+	<bean id="final" class="spring.entity.FinalExam">
+	<property name="미술" value="1"></property><!-- name의 이름을 찾아서 value값을 넣어라.-->
+	<property name="음악" value="2"></property>
+	<property name="체육" value="3"></property>
+	</bean>
+	
+	<bean id="colPrint" class="spring.printer.ColPrint">
+	<property name="data" ref="final" ></property> <!-- name의 이름을 찾아서, ref(래퍼런스), 참조하라-->
+	</bean> <!--xml 파일의 id와 class를 설정하고 property를 이용해 쉽게 java 파일들의 값을 바꿔 출력이 가능하다.-->
+	
+	<bean id="_list" class="java.util.ArrayList"><!--배열사용-->
+		<constructor-arg> 
+			<list><!--배열로 설정할 class주소불러오기-->
+				<bean class="spring.entity.MidExam"/>
+				<bean class="spring.entity.FinalExam"/>
+				<ref bean="mid"/><!--위에 mid라는 id를 참조해서 배열을 쓸 수도 있다.-->
+			</list>
+		</constructor-arg>
+	
+	</bean>
+	
+</beans>
