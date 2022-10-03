@@ -18,7 +18,7 @@ public class main {
 	public static void main(String[] args) {
 		
 		ApplicationContext ctx = new 
-				ClassPathXmlApplicationContext("com/star/main/setting.xml");
+				ClassPathXmlApplicationContext("classpath:/setting.xml");
 	
 		current = new TBlock();
 		
