@@ -7,24 +7,18 @@ public class FinalExam implements Exam {  //FinalExam이 exam을 실행
 	public int get미술() {
 		return 미술;
 	}
-	
 	public void set미술(int 미술) {
 		this.미술 = 미술;
 	}
-	
 	public int get음악() {
 		return 음악;
 	}
-	
 	public void set음악(int 음악) {
-		this.
-		음악 = 음악;
+		this.음악 = 음악;
 	}
-	
 	public int get체육() {
 		return 체육;
 	}
-	
 	public void set체육(int 체육) {
 		this.체육 = 체육;
 	}

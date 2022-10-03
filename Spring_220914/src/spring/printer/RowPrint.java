@@ -6,12 +6,7 @@ public class RowPrint implements Print {
 
 	Exam _data;
 	
-	public RowPrint() {
-		
-	}
-	
-	public RowPrint(Exam _data) {
-		
+	public RowPrint(Exam _data) { //생성자
 		this._data = _data;
 	}
 	
@@ -25,13 +20,10 @@ public class RowPrint implements Print {
 		
 	}
 
+	@Override
 	public void setData(Exam e) {
 		// TODO Auto-generated method stub
 		
-		this._data = e;
-		
 	}
-
-	
 	
 }

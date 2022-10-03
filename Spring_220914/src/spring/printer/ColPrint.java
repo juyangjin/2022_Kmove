@@ -6,10 +6,6 @@ public class ColPrint implements Print{ //ColPrint가 Print를 실행
 
 	private Exam _data; 
 
-	public ColPrint()
-	{
-		
-	}
 	public ColPrint(Exam e)
 	{
 		this._data = e;

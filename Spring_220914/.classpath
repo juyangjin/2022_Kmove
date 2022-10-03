@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
-			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+	<classpathentry kind="src" output="target/classes" path="src">
 		<attributes>
-			<attribute name="module" value="true"/>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -17,177 +16,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/USER/.m2/repository/org/springframework/spring-context/5.3.22/spring-context-5.3.22.jar" sourcepath="C:/Users/USER/.m2/repository/org/springframework/spring-context/5.3.22/spring-context-5.3.22-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.springframework"/>
-			<attribute name="maven.artifactId" value="spring-context"/>
-			<attribute name="maven.version" value="5.3.22"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.google.gerrit.common_2.1.5.v201112241444.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.google.gerrit.prettify_2.1.5.v201112241444.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.google.gerrit.reviewdb_2.1.5.v201112241444.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.google.gson_2.7.0.v20170129-0911.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.google.guava_21.0.0.v20170206-1425.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.google.gwt.servlet_2.0.4.v20100709-0658.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.google.gwtjsonrpc_1.2.5.v201112241444.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.google.gwtorm_1.1.4.v201112241444.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/com.sun.xml.bind_2.2.0.v201505121915.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/javax.activation_1.1.0.v201211130549.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/javax.servlet_3.0.0.v201112011016.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/javax.xml.bind_2.2.0.v201105210648.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/javax.xml.stream_1.0.1.v201004272200.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/javax.xml_1.3.4.v201005080400.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.commons.codec_1.9.0.v20170208-1614.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.commons.httpclient_3.1.0.v201012070820.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.commons.io_2.2.0.v201405211200.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.commons.lang_2.6.0.v201404270220.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.commons.logging_1.1.1.v201101211721.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.httpcomponents.httpclient_4.5.2.v20170210-0925.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.httpcomponents.httpcore_4.4.6.v20170210-0925.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.lucene.analyzers-common_6.1.0.v20161115-1612.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.lucene.core_6.1.0.v20170814-1820.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.lucene.queryparser_6.1.0.v20161115-1612.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.ws.commons.util_1.0.1.v20100518-1140.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.xerces_2.9.0.v201101211617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.xml.resolver_1.2.0.v201005080400.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.xml.serializer_2.7.1.v201005080400.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.apache.xmlrpc_3.0.0.v20100427-1100.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.cdt.mylyn.ui.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.cdt.mylyn.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.bugzilla.core.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.bugzilla.core_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.bugzilla.ide.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.bugzilla.ide_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.bugzilla.tests.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.bugzilla.tests_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.bugzilla.ui.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.bugzilla.ui_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.builds.core.source_1.17.0.v20200730-1155.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.builds.core_1.17.0.v20200730-1155.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.builds.ui.source_1.17.0.v20200730-1155.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.builds.ui_1.17.0.v20200730-1155.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.core.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.core_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.identity.core.source_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.identity.core_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.net.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.net_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.notifications.core.source_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.notifications.core_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.notifications.feed.source_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.notifications.feed_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.notifications.ui.source_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.notifications.ui_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.repositories.core.source_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.repositories.core_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.repositories.http.core.source_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.repositories.http.core_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.repositories.ui.source_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.repositories.ui_1.17.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.screenshots.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.screenshots_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.sdk.util.source_3.25.2.v20200813-1747.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.sdk.util_3.25.2.v20200813-1747.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.ui.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.ui_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.workbench.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.workbench_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.xmlrpc.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.commons.xmlrpc_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.core.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.core_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.sdk.java.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.sdk.java_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.sdk.util.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.sdk.util_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.tasks.ui.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.tasks.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.ui.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.context.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.cvs.core.source_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.cvs.core_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.debug.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.discovery.core.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.discovery.core_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.discovery.ui.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.discovery.ui_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.gerrit.core.source_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.gerrit.core_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.gerrit.dashboard.core_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.gerrit.dashboard.ui_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.gerrit.ui.source_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.gerrit.ui_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.git.core.source_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.git.core_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.git.ui.source_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.git.ui_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.help.ui.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.help.ui_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.hudson.core.source_1.17.0.v20200730-1155.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.hudson.core_1.17.0.v20200730-1155.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.hudson.ui.source_1.17.0.v20200730-1155.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.hudson.ui_1.17.0.v20200730-1155.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.ide.ant.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.ide.ant_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.ide.ui.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.ide.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.java.tasks.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.java.tasks_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.java.ui.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.java.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.monitor.core.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.monitor.core_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.monitor.ui.source_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.monitor.ui_3.25.2.v20200813-0821.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.pde.ui.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.pde.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.resources.ui.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.resources.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.reviews.core.source_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.reviews.core_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.reviews.edit.source_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.reviews.edit_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.reviews.ui.source_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.reviews.ui_2.16.1.v20200828-1618.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.subclipse.core_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.subclipse.ui_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.bugs.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.bugs_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.core.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.core.tests_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.core_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.index.core.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.index.core_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.index.tests_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.index.ui.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.index.ui_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.search.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.search_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.tests.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.tests_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.ui.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.ui.tests_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tasks.ui_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.team.cvs.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.team.cvs_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.team.ui.source_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.team.ui_3.25.2.v20200828-1617.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tests.util.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.tests.util_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.trac.core.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.trac.core.tests_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.trac.core_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.trac.tests.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.trac.tests_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.trac.ui.source_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.trac.ui.tests_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.trac.ui_3.25.2.v20200814-0512.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.versions.core.source_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.versions.core_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.versions.ui.source_1.17.0.v20181223-0759.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Downloads/mylyn-3.25.2.v20200831-1956/plugins/org.eclipse.mylyn.versions.ui_1.17.0.v20181223-0759.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

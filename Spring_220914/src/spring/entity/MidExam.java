@@ -15,9 +15,10 @@ public class MidExam implements Exam {
 		// TODO Auto-generated method stub
 		return this.Total()/ 3.0f;
 	}
-	
-	public String toString() {
-		return "MidExam [국어="  + 국어 + ", 영어=" + 영어 + ", 수학=" + 수학 + "]";
-	}
 
+	@Override
+	public String toString() {
+		return "MidExam [국어=" + 국어 + ", 영어=" + 영어 + ", 수학=" + 수학 + "]";
+	}
+	
 }
