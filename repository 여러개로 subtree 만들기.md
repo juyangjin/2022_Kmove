@@ -20,6 +20,7 @@
        브런치를 같은이름으로 통합하길 바란다. 필자는 master로 통합하였다.
    11. 10번의 과정을 추가하고 싶은 서브트리(자식폴더)만큼 반복한다.
    12. `git push`로 업로드한다.
-
+* * *
  + 이건 windows 환경 기준 설명이고, Mac OS의 경우 일반 터미널로 설치가 가능할 것으로 보인다.
  + 사실 이건 서브트리를 이용한 것이고 브랜치로 나누어서 repository를 연결할 수도 있다고 한다. 필자는 실패해서 아쉬우나 다음에 재도전해 볼 생각이 있다.
+ + [LeeJuHyun](https://github.com/JuHyun419)님의 [Tistory포스팅](https://zzang9ha.tistory.com/294)과, [yeon-06](https://github.com/yeon-06)님의 [Tistory 포스팅](https://yeonyeon.tistory.com/169)을 참고하여 작성된 문서입니다.
