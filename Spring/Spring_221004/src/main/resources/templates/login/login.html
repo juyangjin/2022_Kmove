@@ -1,0 +1,17 @@
+<div th:insert="layout/header"/>
+<meta charset="utf-8">
+<form action="/form/form1" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">name</label>
+    <input name="name" type="text" class="form-control">
+    
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">email</label>
+    <input name="email" type="text" class="form-control">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div th:insert="layout/footer"/>  
