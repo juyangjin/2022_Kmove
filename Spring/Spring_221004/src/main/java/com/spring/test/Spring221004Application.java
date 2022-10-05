@@ -16,3 +16,4 @@ public class Spring221004Application {
 	//실행중에는 locathost:8080으로 접속 가능.
 
 }
+
