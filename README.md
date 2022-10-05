@@ -5,7 +5,6 @@
 
 ## AWS
 ## Python
-## Python
 ## Spring  
 ## Web
 ## JAVA
