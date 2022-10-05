@@ -22,5 +22,9 @@
    12. `git push`로 업로드한다.
 * * *
  + 이건 windows 환경 기준 설명이고, Mac OS의 경우 일반 터미널로 설치가 가능할 것으로 보인다.
- + 서브트리로만이 아니라 브랜치로 나누어서 repository를 연결할 수도 있다고 한다. 필자는 실패해서 아쉬우나 다음에 재도전해 볼 생각이 있다.
- + [LeeJuHyun](https://github.com/JuHyun419)님의 [Tistory포스팅](https://zzang9ha.tistory.com/294)과, [yeon-06](https://github.com/yeon-06)님의 [Tistory 포스팅](https://yeonyeon.tistory.com/169)을 참고하여 작성된 문서입니다.
+ + 서브트리로만이 아니라 브랜치로 나누어서 repository를 연결할 수도 있다고 한다. 
+ + 필자는 성공한 줄 알았는데 브랜치는 안되고 서브트리만 성공하였다. 그리고 서브트리가 연결된 후에는 자식 repository를 삭제해도 부모 repository에 영향이 없다.
+
+* * *
+ #### 출처
+ [LeeJuHyun](https://github.com/JuHyun419)님의 [Tistory포스팅](https://zzang9ha.tistory.com/294)과, [yeon-06](https://github.com/yeon-06)님의 [Tistory 포스팅](https://yeonyeon.tistory.com/169)을 참고하여 작성된 문서입니다.
