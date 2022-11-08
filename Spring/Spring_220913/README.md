@@ -19,6 +19,8 @@
 - 리스트형으로 Exam을 getBean함.
 - `_mid1 = _list.get(0)`은 `_list`의 0번째 인덱스값을 호출하라는 의미임
 - for문을 사용하여 Exam e를 `_list` 인덱스값만큼 반복
+### setting.xml
+- 
 
 ## printer
 ### Colprint
