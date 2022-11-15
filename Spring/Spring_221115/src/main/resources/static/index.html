@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+	<script type="text/javascript">
+
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				//alert("서브밋 한다"); 
+				//document.getElementById('frm').submit();
+
+				const xhr = new XMLHttpRequest();
+				xhr.open('get', "testRequestMapping?msg1=aaa&msg2=bbb", true);
+				//xhr.responseType = 'json';
+				//xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8;');
+
+				xhr.onload = function (e) {
+					if (this.status == 200) {
+						alert(this.responseText);
+					//	document.getElementById("btn").innerText = this.responseText;
+						document.getElementById("btn").innerHtml = this.responseText;
+					}
+				}
+				//xhr.send(JSON.stringify(data));
+				xhr.send(null);
+
+				return false;
+			};
+		}; 
+	</script>
+
+</head>
+
+<body>
+	<form id="frm" action="testRequestMapping" method="get">
+		<div class="mb-3"> <label for="exampleInputEmail1" class="form-label">Email address</label>
+			<input name="msg1" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+		</div>
+		<div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Password</label>
+			<input name="msg2" type="text" class="form-control" id="exampleInputPassword1">
+		</div>
+		<div class="mb-3 form-check"> <input type="checkbox" class="form-check-input" id="exampleCheck1">
+			<label class="form-check-label" for="exampleCheck1">Check me out</label>
+		</div> <button id="btn" type="button"  class="btn btn-primary">Submit</button>
+	</form>
+</body>
+
+</html>
