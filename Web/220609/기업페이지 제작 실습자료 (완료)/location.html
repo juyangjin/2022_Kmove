@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업형 웹 페이지</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/ie.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=100afb4741d4c4c85dc0cca969d1a867"></script>
+</head>
+
+<body class="location">
+    <header>
+        <div class="inner">
+            <h1><a href="#">DECODLAB</a></h1>
+            <ul id="gnb">
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="./location.html">LOCATION</a></li>
+            </ul>
+            <ul class="util">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="inner">
+            <div class="upper">
+                <h1>Map</h1>
+                <div id="map"></div>
+            </div>
+            <div class="lower">
+            </div>            
+        </div>
+    </section>
+
+    <footer>
+        <div class="inner">
+            <div class="upper">
+                <h1>DCODELAB</h1>
+                <ul>
+                    <li>Policy</li>
+                    <li>Term</li>
+                    <li>Family Site</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+            <div class="lower">
+                <address>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, alias!
+                </address>
+                <p>
+                    2020 DECODELAB &copy; 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let container = document.getElementById('map');
+        let options ={
+            center: new kakao.maps.LatLng(36.8394518, 127.1839014),
+            level: 3    // 지도 확대 레벨
+        }
+        let map = new kakao.maps.Map(container, options);
+        /* 
+        // 마커 생성
+        let markerPosition = new kakao.maps.LatLng(36.8394518, 127.1839014);
+        let marker = new kakao.maps.Marker( {
+            position: markerPosition
+        });
+        marker.setMap(map);
+
+        // 마커 설명
+        let iwContent = '<div style="padding:5px;">백석대학교</div>';
+        let infowindow = new kakao.maps.InfoWindow({
+            position: markerPosition,
+            content: iwContent
+        });
+        infowindow.open(map, marker);
+        */
+        // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
+        if (navigator.geolocation) {            
+            // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+            navigator.geolocation.getCurrentPosition(function(position) {
+                
+                var lat = position.coords.latitude, // 위도
+                    lon = position.coords.longitude; // 경도
+                
+                var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                    message = '<div style="padding:5px;">안녕하세요</div>'; // 인포윈도우에 표시될 내용입니다
+                
+                // 마커와 인포윈도우를 표시합니다
+                displayMarker(locPosition, message);
+                    
+            });
+            
+        } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+            
+            var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
+                message = 'geolocation을 사용할수 없어요..'
+                
+            displayMarker(locPosition, message);
+        }
+
+        // 지도에 마커와 인포윈도우를 표시하는 함수입니다
+        function displayMarker(locPosition, message) {
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({  
+                map: map, 
+                position: locPosition
+            }); 
+            
+            var iwContent = message, // 인포윈도우에 표시할 내용
+                iwRemoveable = true;
+
+            // 인포윈도우를 생성합니다
+            var infowindow = new kakao.maps.InfoWindow({
+                content : iwContent,
+                removable : iwRemoveable
+            });
+            
+            // 인포윈도우를 마커위에 표시합니다 
+            infowindow.open(map, marker);
+            
+            // 지도 중심좌표를 접속위치로 변경합니다
+            map.setCenter(locPosition);      
+        }    
+    </script>
+</body>
+
+</html>
