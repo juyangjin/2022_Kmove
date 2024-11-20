@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업형 웹 페이지</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c47106c6a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ie.js"></script>
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="inner">
+            <h1><a href="#">DCODLAB</a></h1>
+
+            <ul id="gnb">
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="community.html">COMMUNITY</a></li>
+                <li><a href="#">LOCATION</a></li>
+            </ul>
+
+            <ul class="util">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="location">
+        <div class="inner">
+            <div class="upper">
+                <h1>MAP</h1>
+                <div id="map"></div>
+            </div>
+            <div class="lower">
+                <h2>Contact info</h2>
+                <ul>
+                    <li>Add | 충청남도 천안시 동남구 백석대학로 </li>
+                    <li>Tel | 041-550-0000 </li>
+                    <li>Fax | 041-550-0001 </li>
+                </ul>
+                <h2>Contact email</h2>
+                <form class="contactfrm">
+                    <ul>
+                        <li>
+                            <label for="name">이름</label>
+                            <input id="contact_name">
+                        </li>
+                        <li>
+                            <label for="mail">이메일</label>
+                            <input id="contact_mail">
+                        </li>
+                        <li>
+                            <label for="msg">메세지</label>
+                            <textarea id="contact_mail"></textarea>
+                        </li>
+                        <li>
+                            <button>제출</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="inner">
+            <div class="upper">
+                <h1>DCODELAB</h1>
+                <ul>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Family Site</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="lower">
+                <address>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
+                    TEL : 031-111-1234 C.P : 010-1234-5678
+                </address>
+                <p>
+                    2020 DOCDELAB &copy; copyright all right reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" 
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cd3bb3bf0a8b97bdf4e46073558a9fc7"></script>
+
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(36.8394518, 127.1839014), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+        var markerPosition = new kakao.maps.LatLng(36.8394518, 127.1839014);
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
+
+        var iwContent = '<div style="padding:5px;">백석대학교</div>';
+        var infowindow = new kakao.maps.InfoWindow ({
+            position: markerPosition,
+            content: iwContent
+        });
+        infowindow.open(map, marker)
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0b3fb760c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <div class='navBlock'>
+            <div>
+                <img alt="Instagram" src="./img/logo.png">
+            </div>
+            <div class="searchbox">            
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="검색" type="text">                
+                </div>  
+            </div> 
+            <script>
+                document.querySelector('div.searchbox input').
+                addEventListener('focus', function() {
+                    document.querySelector('div.searchlist').style.display = 'block';
+                });
+                document.querySelector('div.searchbox input').
+                addEventListener('blur', function() {
+                    document.querySelector('div.searchlist').style.display = 'none';
+                });
+            </script>           
+            <div class="buttons">
+                <a href="#"><i class="fa-solid fa-xl fa-house-user"></i></a>
+                <a href="#"><i class="fa-solid fa-xl fa-comments"></i></a>
+                <a href="#"><i class="fa-solid fa-xl fa-circle-plus"></i></i></a>
+                <a href="#"><i class="fa-solid fa-xl fa-compass"></i></a>
+                <a href="#"><i class="fa-solid fa-xl fa-circle-heart"></i></a>
+                <a href="#"><img src="./img/member/my.jpg"></a>            
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="contents">
+            <section class="recents">
+                <ul>
+                    <li>
+                        <img src="./img/recents/1.jpg">
+                        <span>naturecollection</span>
+                    </li>
+                    <li>
+                        <img src="./img/recents/2.jpg">
+                        <span>cafegs25</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="articles">
+                <article class="article_content">
+                    <header>
+                        <img src="./img/recents/1.jpg">
+                        <span>nature</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </header>
+                    <section>
+                        <img src="./img/recents/1_img.jpg">
+                        <div class="article_foot">
+                            <ul>
+                                <li><i class="fa-brands fa-gratipay"></i></li>
+                                <li><i class="fa-regular fa-comment"></i></li>
+                                <li><i class="fa-regular fa-envelope"></i></li>
+                                <li><i class="fa-regular fa-bookmark"></i></li>
+                            </ul>
+                            <div class="article_like">좋아요 110개</div>
+                            <div class="article_text">
+                                <span class="userid">naturecollection</span>
+                                꿈을 그리며 이루어가는 히어로들의 특별한 꿈이야기!
+                            </div>
+                            <div class="comment_list">
+                                <span>댓글 모두 보기</span>
+                                <ul>
+                                    <li><span class="userid">yeon</span><span>좋아요!</span></li>
+                                    <li><span class="userid">youl</span><span>걱정해결합니다.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="comment_new">
+                        <i class="fa-regular fa-face-grin"></i>
+                        <textarea placeholder="댓글달기"></textarea>
+                        <button>게시</button>
+                    </section>                
+                </article>                
+            </section>
+        </section>
+        <aside>
+            <div>
+                <div class="myinfo">
+                    <img src="./img/member/my.jpg">
+                    <span>Hyun Jae</span>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <span>회원님을 위한 추천</span>
+                        <span>모두 보기</span>                
+                    </div>
+                    <ul>
+                        <li><img src="./img/member/1.jpg"><span class="user">james</span><span>팔로우</span></li>
+                        <li><img src="./img/member/2.jpg"><span class="user">pooh</span><span>팔로우</span></li>                        
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업형 웹 페이지</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c47106c6a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ie.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1><a href="#">DCODLAB</a></h1>
+
+            <ul id="gnb">
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="community.html">COMMUNITY</a></li>
+                <li><a href="#">LOCATION</a></li>
+            </ul>
+
+            <ul class="util">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="community">
+        <div class="inner">
+            <div class="upper">
+                  <div class="ui secondary  menu" id="searchBtn">
+                    <a class="item active" data-id="FE">
+                      Frontend
+                    </a>
+                    <a class="item" data-id="BE">
+                      Backend
+                    </a>
+                    <a class="item" data-id="JS">
+                      Javascript
+                    </a>
+                    <div class="right menu">
+                      <div class="item">
+                        <div class="ui icon input">
+                          <input type="text" placeholder="Search...">
+                          <i class="search link icon"></i>
+                        </div>
+                      </div>
+                      <a class="ui item" onclick="$('.ui.modal').modal('show');">
+                        Write
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ui modal">
+                    <i class="close icon"></i>
+                    <div class="header">
+                      글 작성
+                    </div>
+                    <div class="image content">
+                      <div class="ui form">
+                        <div class="field">
+                            <label>작성자</label>
+                            <input class="ui input" id="frmWriteAuthor">
+                        </div>
+                        <div class="field">
+                            <label>카테고리</label>
+                            <div class="ui selection dropdown">
+                                <input type="hidden" id="frmWriteCategory" value="1">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Frontend</div>
+                                <div class="menu">
+                                  <div class="item" data-value="1">Frontend</div>
+                                  <div class="item" data-value="2">Backend</div>
+                                  <div class="item" data-value="3">Javascript</div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="field">
+                            <label>제목</label>
+                            <input class="ui input" id="frmWriteTitle">
+                        </div>
+                        <div class="field">
+                            <label>내용</label>
+                            <textarea rows="2" id="frmWriteContent"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="actions">
+                      <div class="ui button deny">Cancel</div>
+                      <div class="ui button ok" id="frmWriteOk">OK</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="lower">
+                <table class="ui celled table">
+                    <thead>
+                        <tr>
+                            <th class="one wide">번호</td>
+                            <th class="two wide">카테고리</td>
+                            <th class="four wide">제목</td>
+                        </tr>
+                    </thead>
+                    <tbody id="articleTable">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="inner">
+            <div class="upper">
+                <h1>DCODELAB</h1>
+                <ul>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Family Site</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="lower">
+                <address>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
+                    TEL : 031-111-1234 C.P : 010-1234-5678
+                </address>
+                <p>
+                    2020 DOCDELAB &copy; copyright all right reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('.ui.dropdown').dropdown();
+        
+        let articleList = [];
+        let articleId = 0;
+        function insertArticle(data){
+            // data => 글에 대한 정보 객체
+            let tableObj = document.getElementById('articleTable');
+            let tr = document.createElement('tr');
+            let td = document.createElement('td');
+            td.innerText = data.id;            
+            tr.appendChild(td);
+            
+            td = document.createElement('td');
+            let str = "Frontend";
+            if (data.category==2){
+                str = "Backend";
+            } else if (data.category==3) {
+                str = "Javascript";
+            }
+            td.innerText = str;
+            tr.appendChild(td);
+
+            td = document.createElement('td');
+            // td.innerText = data.title;
+            let accord = document.createElement('div');
+            accord.className = 'ui accordion';
+            let accord_title = document.createElement('div');
+            accord_title.className = 'title';
+            accord_title.innerHTML = '<i class="dropdown icon"></i>' + data.title;
+            accord.appendChild(accord_title);
+
+            let accord_content = document.createElement('div');
+            accord_content.className = 'content';
+            let p = document.createElement('p');
+            p.className = 'transition hidden';
+            p.innerText = data.content.replaceAll('\n','<br>');
+            accord_content.appendChild(p);
+
+            accord.appendChild(accord_content);
+            td.appendChild(accord);
+            tr.appendChild(td);
+            tableObj.appendChild(tr);
+
+            $('.ui.accordion').accordion();
+        }
+        function addArticle() {
+            // 글 작성 버튼이 눌렸을 때
+            let author=document.getElementById('frmWriteAuthor').value;
+            let category=document.getElementById('frmWriteCategory').value;
+            let title=document.getElementById('frmWriteTitle').value;
+            let content=document.getElementById('frmWriteContent').value;
+            articleId = articleId + 1; 
+            articleList.push( {
+                'id':articleId,
+                'author':author,
+                'category':category,
+                'title':title,
+                'content':content
+            });
+            insertArticle(articleList[articleList.length-1]);
+            console.log(articleList);
+        }
+        document.getElementById('frmWriteOk')
+                .addEventListener('click', addArticle);
+
+        function searchCategory() {
+            
+        }
+        document.getElementById('searchBtn')
+                .addEventListener('click', function(e) {
+                    let currentMode = e.target.getAttribute('data-id');
+                    if (currentMode == "FE") {
+                        let tableObj = document.getElementById('articleTable');
+                        tableObj.innerHTML = "";
+                        for (data of articleList) {
+                            if (data.category == 1) {
+                                insertArticle(data);
+                            }
+                        }
+                    } else if(currentMode == "BE"){
+                        let tableObj = document.getElementById('articleTable');
+                        tableObj.innerHTML = "";
+                        for (data of articleList) {
+                            if (data.category == 2) {
+                                insertArticle(data);
+                            }
+                        }
+                    }                    
+                });
+    </script>
+</body>
+
+</html>
